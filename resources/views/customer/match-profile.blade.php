@@ -12,6 +12,7 @@
 
                 <div class="card-body">
                 	<div class="row">
+                		@if(count($matchData)>0)
                 		@foreach($matchData as $data)
                     		<div class="col-md-12">
                     			<div class="row" style="border: 1px solid gray;">
@@ -47,6 +48,9 @@
                     			</div>
                     		</div>
                     	@endforeach
+                    	@else
+                    	<p>No Match Found</p>
+                    	@endif
                 	</div>
                     
                 </div>
